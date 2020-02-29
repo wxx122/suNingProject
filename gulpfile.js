@@ -10,11 +10,11 @@ const sass=require('gulp-sass')
 
 // css
 const sassHandler=()=>{
-    return gulp.src('./src/.sass/*.sass')
+    return gulp.src('./src/sass/*.scss')
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssmin())
-    .pipe(gulp.dest('./dist/sass'))
+    .pipe(gulp.dest('./dist/css'))
 }
 // js
 const jsHandler=()=>{
@@ -68,7 +68,7 @@ const serverHandler=()=>{
 }
 // 自动监控文件
 const watchHandler=()=>{
-    gulp.watch('./src/sass/*.sass',sassHandler)
+    gulp.watch('./src/sass/*.scss',sassHandler)
     gulp.watch('./src/js/*.js',jsHandler)
     gulp.watch('./src/pages/*.html',htmlHandler)
     gulp.watch('./src/images/**',imgHandler)
