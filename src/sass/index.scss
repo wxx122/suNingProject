@@ -43,6 +43,7 @@
                display: none;
                top:27px;
                z-index: 7691;
+               border: 1px solid #eee;
            }
            .son-nav{
                width: 960px;
@@ -52,19 +53,25 @@
                li{
                    width: 170px;
                    float: left;
+                   border-right: 1px solid #cccccc;
+                   margin-top: 10px;
                    overflow: hidden;
+                   &:last-child{
+                       border: none;
+                   }
                 dd{
-                    margin-top: 15px;
+                    margin-left: 10px;
                     margin-bottom: 10px;
                 }
                 .list-box{
                     width: 100%;
-                    border-right: 1px solid #cccccc;
+                    margin-left: 10px;
                     overflow: hidden;
                     
                 }
                 
                }
+               
                
            }
            .son-nav1{
@@ -113,12 +120,10 @@
 .header{
     height: 110px;
     position: relative;
-    background-color: purple;
     .header-nav{
         width: 1190px;
         height: 110px;
         margin: 0 auto;
-        background: yellow;
         position: relative;
         .logo-set{
             position: absolute;
@@ -135,7 +140,6 @@
         height: 100px;
         width: 600px;
         top: 0;
-        background: cyan;
         left: 300px;
         .col-lg-6{
             margin-top: 20px;
@@ -158,6 +162,300 @@
                     }
                 }
                 
+            }
+            }
+            .hotworlds{
+                width: 540px;
+                height: 18px;
+                margin-top: 5px;
+                margin-left: 20px;
+                overflow: hidden;
+                a{
+                    float: left;
+                    white-space: nowrap;
+                    font-size: 12px;
+                    margin: 3px 0 3px -11px;
+                    padding: 0 20px 0 10px;
+                    border-left: 1px solid #ddd;
+                    height: 12px;
+                    line-height: 12px;
+                    &:first-child{
+                        border: none;
+                    }
+                }
+        }
+    }
+}
+.nav-bar{
+    min-width: 1190px;
+    // background: crimson;
+    .nav-bar-header{
+        width: 1190px;
+        height: 38px;
+        margin: 0 auto;
+        // background:pink;
+        position: relative;
+       .all{
+        position: absolute;
+        display: block;
+        width: 190px;
+        padding-left: 27px;
+        height: 38px;
+        top: 0;
+        line-height: 38px;
+        background:#F90;
+        color:#FFF !important;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+        i{
+            position: absolute;
+            display: block;
+            width: 12px;
+            height: 12px;
+            top: 14px;
+            left: 9px;
+            background: url("../images/index/index.png") 0 0;
+        }
+       }
+       .index-list{
+        position: absolute;
+        top: 38px;
+        left: 0;
+        width: 190px;
+        height: 482px;
+        background: gray;
+        .index-list-nav{
+            position: absolute;
+            left: 0;
+            top: 1px;
+            height: 480px;
+            width: 190px;
+            z-index: 7677;
+            background: #252221;
+            li{
+                position: relative;
+                width: 190px;
+                height: 32px;
+                padding: 0 8px 0 10px;
+                a{
+                    float: left;
+                    margin-top: 9px;
+                    margin-right: 10px;
+                    padding-right: 2px;
+                    vertical-align:middle;
+                    color:#ddd;
+                    font-size: 13px;
+                    // background: red;
+                    border-right: 1px solid #d8d8d8;
+                    
+                }
+            }
+            li:hover a{
+                color: #252221;
+            }
+            li a:hover{
+                color: #f60;
+            }
+            .current{
+                background: white;
+            }
+        }
+        .listbox{
+            .index-list-box{
+                width: 999px;
+                top: 0;
+                position: absolute;
+                left: 190px;
+                min-height: 480px;
+                overflow: hidden;
+                background: white;
+                z-index: 7676;
+                display: none;
+                .sort-btn{
+                    width: 686px;
+                    float: left;
+                    height: 24px;
+                    margin: 10px 0 0 8px;
+                    overflow: hidden;
+                    a{
+                        float: left;
+                        height: 24px;
+                        margin-left: 25px;
+                        padding: 0 10px;
+                        color:#FFF;
+                        line-height: 24px;
+                        text-align: center;
+                        background:#F90;
+                        text-decoration: none;
+                        font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+                    }
+                }
+                .cate-list{
+                    width: 780px;
+                    margin: 6px 0 0 0;
+                    padding-left: 20px;
+                    overflow: hidden;
+                    float: left;
+                    // background: yellow;
+                    dl{
+                        width: 750px;
+                        float: left;
+                        height: auto;
+                        overflow: hidden;
+                        // background: skyblue;
+                        margin-bottom: 0;
+                        dt{
+                            float: left;
+                            width: 84px;
+                            height: 20px;
+                            font-weight: 700;
+                            padding-left: 10px;
+                            padding-top: 2px;
+                        }
+                        dd{
+                            width: 650px;
+                            float: left;
+                            font: 12px/1.5 arial,tahoma,宋体;
+                            line-height: 20px;
+                            overflow: hidden;
+                            border-bottom: 1px solid#eee;
+                            margin-top: 8px;
+                            padding-bottom: 8px;
+                            a{
+                                margin-right: 15px;
+                                float: left;
+                                &:first-child{
+                                    color:  #f60;
+                                }
+                            }
+                            
+                        }
+                    }
+                    }
+                }
+                .imgbox{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 199px;
+                    height: 100%;
+                    overflow: hidden;
+                    background:#f3f3f3;
+                    .imglist{
+                        width: 182px;
+                        margin: 10px 0 0 8px;
+                        // background: slateblue;
+                        a{
+                            float: left;
+                            width: 90px;
+                            height: 38px;
+                            margin: 0 1px 1px 0;
+                            padding-top: 7px;
+                            background:#FFF;
+                            img{
+                                width: 80px;
+                                height: 30px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+        }
+        }
+        .ng-index{
+            position: absolute;
+            left: 50%;
+            padding-left: 10px;
+            margin-left: -405px;
+            height: 38px;
+            line-height: 38px;
+            overflow: hidden;
+            z-index: 7669;
+
+            .ng-nav{
+                li{
+                    position: relative;
+                    height: 38px;
+                    font-weight: bold;
+                    float: left;
+                    padding: 0 12px 0 13px;
+                    a{
+                      color: rgb(51, 51, 51);
+                    }
+                    span{
+                        position: absolute;
+                        width: 25px;
+                        height: 8px;
+                        bottom: -8px;
+                        left: 50%;
+                        margin-left: -12px;
+                        background: url('../images/index/index.png') -37px 0;
+                        transition: all .5s;
+                    }
+                    }
+                    li:hover span{
+                        bottom: 0;
+                    }
+                    li:hover a{
+                        color: #F90;
+                    }
+                }
+            }
+        
+       }
+    
+    a:hover{
+        text-decoration: none;
+    }
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 482px;
+    overflow: hidden;
+    .fw-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 482px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            width: 545px;
+            height: 482px;
+            left: 50%;
+            top: 0;
+        }
+        .fw-bg-left{
+            margin-left: -950px;
+        }
+        .fw-bg-right{
+            margin-left: 425px;
+        }
+    }
+    .banner-wrapper{
+        @extend .banner;
+        .wrapper-box{
+            @extend .fw-bg;
+            ul{
+                @extend.wrapper-box;
+                li{
+                    @extend ul;
+                    .big{
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 830px;
+                        height: 482px;
+                        margin-left: -820px;
+                        img{
+                            width: 830px;
+                            height: 482px;
+                        }
+                    }
+                }
             }
         }
     }

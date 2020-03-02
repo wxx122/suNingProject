@@ -4,3 +4,5 @@ $('.nav>li>a').mouseover(function(){
 $('.header').mouseover(function(){
     $('.son-nav-close').hide()
 })
+
+console.log($(".index-list-nav>li"))
