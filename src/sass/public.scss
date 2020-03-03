@@ -16,3 +16,13 @@ a{
 li{
     list-style: none;
 }
+@font-face {
+    font-family: 'iconfont';
+    src: url('../lib/iconfont/iconfont.eot');
+    src: url('../lib/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../lib/iconfont/iconfont.woff2') format('woff2'),
+        url('../lib/iconfont/iconfont.woff') format('woff'),
+        url('../lib/iconfont/iconfont.ttf') format('truetype'),
+        url('../lib/iconfont/iconfont.svg#iconfont') format('svg');
+  }
+  

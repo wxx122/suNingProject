@@ -177,3 +177,40 @@ function getList() {
         })
     }
     allgetSonList()
+    // 头部右侧
+    function toutiaoList(){
+        $.ajax({
+            url:'../lib/json/toutiao.json',
+            dataType:'json',
+            success:function(res){
+                console.log(res)
+                let str=""
+                res.forEach(item=>{
+                    str+=`<li class="swiper-slide">
+                    <p>
+                        <a href="#">
+                            <i>热点</i>
+                            ${item.toutiao}
+                        </a>
+                        <a href="#">
+                            <i>热点</i>
+                            ${item.toutiao}
+                        </a>
+                        <a href="#">
+                            <i>热点</i>
+                            ${item.toutiao}
+                        </a>
+                    </p>
+                </li>`
+                })
+                console.log(str)
+                $('.fixbox').html(str)
+                var mySwiper2 = new Swiper ('.toutiao', {
+                    direction: 'vertical', // 垂直切换选项
+                    loop: true, // 循环模式选项
+                    autoplay: true,
+                  })        
+            }
+        })
+    }
+    toutiaoList()
