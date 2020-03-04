@@ -183,7 +183,7 @@ function getList() {
             url:'../lib/json/toutiao.json',
             dataType:'json',
             success:function(res){
-                console.log(res)
+                // console.log(res)
                 let str=""
                 res.forEach(item=>{
                     str+=`<li class="swiper-slide">
@@ -203,7 +203,7 @@ function getList() {
                     </p>
                 </li>`
                 })
-                console.log(str)
+                // console.log(str)
                 $('.fixbox').html(str)
                 var mySwiper2 = new Swiper ('.toutiao', {
                     direction: 'vertical', // 垂直切换选项
@@ -214,3 +214,59 @@ function getList() {
         })
     }
     toutiaoList()
+    // 左侧浮动导航栏
+    function getFloatbar(){
+        $.ajax({
+            url:'../lib/json/shop.json',
+            dataType: 'json',
+            success:function(res){
+                let str=''
+                res.forEach(item=>{
+                    str+=`<li class="liston">
+                    <a href="#${item.id}">${item.titleName}</a>
+                </li>`
+                })
+                $('.floatlist').html(str)
+            }
+        })
+    }
+    getFloatbar()
+    // 商品栏渲染
+    function getshoplist(){
+        $.ajax({
+            url:'../lib/json/shop.json',
+            dataType: 'json',
+            success:function(res){
+                console.log(res)
+                let str=''
+                res.forEach(item=>{
+                    str+=`<div class="new-first"> 
+                    <h4 id="${item.id}" class="title">
+                        ${item.titleName}
+                    </h4>
+                    <div class="shop">`
+                    item.shoplist.forEach(item2=>{
+                        str+=`<li>
+                        <a href="#">
+                            <p class="img-name">${item2.imgName}</p>
+                            <p class="img-desc">${item2.imgdesc}</p>
+                        </a>
+                        <a href="#" class="img-wraap">
+                            <img src="${item2.imgaddress}" alt="">
+                        </a>
+                    </li>`
+                    })
+                    str+=`</div>
+                    </div>`
+                })
+              $('#new').html(str)
+              $('#new').children().mouseover(function(){
+                $('.list').children().eq($(this).index()).addClass('on')
+              })
+              $('#new').children().mouseout(function(){
+                $('.list').children().eq($(this).index()).removeClass('on')
+              })
+            }
+        })
+    }
+    getshoplist()
