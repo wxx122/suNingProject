@@ -237,7 +237,6 @@ function getList() {
             url:'../lib/json/shop.json',
             dataType: 'json',
             success:function(res){
-                console.log(res)
                 let str=''
                 res.forEach(item=>{
                     str+=`<div class="new-first"> 
@@ -265,6 +264,9 @@ function getList() {
               })
               $('#new').children().mouseout(function(){
                 $('.list').children().eq($(this).index()).removeClass('on')
+              })
+              $('#new >div').on('click','li',function(){
+                  window.location.href='../pages/paging.html'
               })
             }
         })

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='../css/detail.css'>
+   <link rel="stylesheet" href='../css/public.css'>
+   <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../lib/pagination/pagination.css">
+   <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+   <link rel="stylesheet" href="../lib/jquery.exzoom.css">
+   <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/swiper/js/swiper.min.js"></script>
+    <script src="../lib/pagination/pagination.js"></script>
+    <script src="../lib/jquery.exzoom.js"></script>
+</head>
+<body>
+    <nav class="nav-box">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">网站导航
+                <span class="caret"></span>
+            </a>
+            <!-- 导航 -->
+            <ul class="son-nav son-nav-close" >
+            </ul>
+        </li>
+            <li role="presentation"><a href="#">商家入驻
+                <span class="caret"></span>
+            </a>
+            <ul class="son-nav1 son-nav-close" >
+            </ul>
+        </li>
+            <li role="presentation"><a href="#">客户服务
+                <span class="caret"></span>
+            </a>
+            <ul class="son-nav2 son-nav-close" >
+            </ul>
+        </li>
+            <li role="presentation"><a href="#">合肥
+                <span class="caret"></span>
+            </a></li>
+          </ul>
+          <!-- 第二个导航栏 -->
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">请登录
+            </a></li>
+            <li role="presentation"><a href="#">注册有礼
+            </a></li>
+            <li role="presentation"><a href="#">我的订单
+                <span class="caret"></span>
+            </a></li>
+            <li role="presentation"><a href="#">我的易购
+                <span class="caret"></span>
+            </a></li>
+            <li role="presentation"><a href="#">苏宁会员
+            </a></li>
+            <li role="presentation"><a href="#">购物车
+                <span class="caret"></span>
+            </a></li>
+            <li role="presentation"><a href="#">易付宝
+            </a></li>
+            <li role="presentation"><a href="#">企业采购
+            </a></li>
+            <li role="presentation"><a href="#">手机苏宁
+                <span class="caret"></span>
+            </a></li>
+          </ul>
+    </nav>
+    <div class="g-bg">
+    <div class="g-header">
+        <div class="wraap">
+            <div class="g-search">
+                <form action="">
+                    <div class="searchbox">
+                        <input class="search-keyword search-keyword-yg" placeholder="搜好货">
+                        <input  type="button" class="search-btn" value="搜易购" >
+                        <input  type="button" class="search-btn searchstore-btn" value="搜本店">
+                    </div>
+                </form>
+            </div>
+            <div class="g-logo">
+                <a href="#">
+                    <img src="https://res.suning.cn/public/v3/images/logo/snlogo.png?v=2015042703" alt="">
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shopinfo">
+    <divc class="box">
+        <div class="exzoom img-left " id="exzoom">
+            <!--大图区域-->
+            <div class="exzoom_img_box">
+                <ul class='exzoom_img_ul'>
+                    <li>
+                        <a href="#">
+                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://imgservice.suning.cn/uimg1/b2c/image/Sl3Y_pLMuOR00M11sXccCw.jpg_800w_800h_4e" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--缩略图导航-->
+            <div class="exzoom_nav"></div>
+            <!--控制按钮-->
+            <p class="exzoom_btn">
+                <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a>
+                <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a>
+            </p>
+        </div>
+        <div class="proinfo"></div>
+    </div>
+</div>
+</body>
+<script src="../js/detail.js"></script>
+<script>
+    const goodsInfo = JSON.parse(localStorage.getItem('goods_info'))
+    console.log(goodsInfo)
+</script>
+</html>

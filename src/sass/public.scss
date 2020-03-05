@@ -1,3 +1,4 @@
+@import "./variable.scss";
 *{
     margin: 0;
     padding: 0;
@@ -27,5 +28,532 @@ li{
         url('../lib/iconfont/iconfont.woff') format('woff'),
         url('../lib/iconfont/iconfont.ttf') format('truetype'),
         url('../lib/iconfont/iconfont.svg#iconfont') format('svg');
-  }
-  
+  }  
+  // 底部
+.ng-foot{
+    width: 100%;
+    background: #f2f2f2 ;
+    position: relative;
+    z-index: 0;
+    .end{
+        position: relative;
+        width: 112px;
+        height: 22px;
+        text-align: center;
+        color:#CCC;
+        margin: 15px auto;
+        font: 18px/22px "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+        span{
+            position: absolute;
+            top: 11px;
+            width: 97px;
+            height: 1px;
+            background:#CCC;
+        }
+        .line-left{
+            left: -97px;
+        }
+        .line-right{
+            right: -97px;
+        }
+    }
+    .ng-foot-box{
+        width: 100%;
+        background:#f5f5f5;
+        border-top: 1px solid#e7e7e7;
+        .foot-con{
+            width: 1190px;
+            margin: 0 auto;
+            overflow: hidden;
+            .foot-promise{
+                width: 1250px;
+                padding: 12px 0;
+                height: 73px;
+                border-bottom: 1px solid#eaeaea;
+                dl{
+                    width: 250px;
+                    float: left;
+                    overflow: hidden;
+                    dt{
+                        float: left;
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 8px;
+                        img{
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                }
+                dd{
+                    float: left;
+                    height: 48px;
+                    width: 180px;
+                    p{
+                        line-height: 24px;
+                        width: 100%;
+                        color:#545454;
+                        margin: 0;
+                        strong{
+                            font-weight: 700;
+                            color:
+                            #222;
+                            font-size: 14px; 
+                        }
+                    }
+                    
+                }
+               
+            }
+            .ng-help-box{
+                width: 1050px;
+                float: left;
+                height: 180px;
+                dl{
+                    float: left;
+                    height: 160px;
+                    width: 210px;
+                    dt{
+                        width: 100%;
+                        line-height: 40px;
+                        font-weight: 700;
+                        color:#545454;
+                        height: 35px;
+                        font-size: 14px;
+                        overflow: hidden;
+                    }
+                }
+                dd{
+                    width: 100%;
+                    line-height: 22px;
+                    a{
+                        color: #545454;
+                    }
+                }
+                a:hover{
+                    color: #F90;
+                }
+            }
+            .ng-app-down{
+                float: left;
+                height: 180px;
+                width: 90px;
+                p{
+                    width: 100%;
+                    line-height: 40px;
+                    font-weight: 700;
+                    color:#545454;
+                    height: 35px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    overflow: hidden;
+                    
+                }
+                a{
+                    color: #545454;
+                }
+            }
+            a:hover{
+                color: #F90;
+            }
+        }
+    }
+    .ng-s-footer{
+        background: #FFF;
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+        .ng-s-con{
+            height: 185px;
+            margin: 0 auto;
+            .ng-url-list{
+                line-height: 25px;
+                height: 25px;
+                a{
+                    color: #666;
+                    text-decoration: none !important;
+                    display: inline-block;
+                }
+                span{
+                    color:#888;
+                    padding: 0 8px;
+                }
+            }
+            .ng-copyright{
+                color:#999;
+                margin-top: 0;
+                span{
+                    color:#888;
+                    padding: 0 8px;
+                }
+                a{
+                    color: #999;
+                    display: inline-block;
+                }
+                .gwab {
+                    color: #999;
+                    position: relative;
+                    padding-left: 25px;
+                    text-decoration: none !important;
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 20px;
+                        height: 20px;
+                        background: url('../images/public/gwab-icon.png') no-repeat;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.ng-top{
+    height: 50px;
+    width: 100%;
+    min-width: 990px;
+    background: #fff;
+    left: 0;
+    top: 30px;
+    opacity: .95;
+    position: relative;
+    .all{
+        position: absolute;
+        display: block;
+        width: 190px;
+        padding-left: 27px;
+        height: 38px;
+        top: 0;
+        line-height: 38px;
+        background:#F90;
+        color:#FFF !important;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 80px;
+        i{
+            position: absolute;
+            display: block;
+            width: 12px;
+            height: 12px;
+            top: 14px;
+            left: 9px;
+            background: url("../images/index/index.png") 0 0;
+        }
+       }
+    .index-list{
+        position: absolute;
+        top: 38px;
+        left: 0;
+        width: 190px;
+        height: 482px;
+        background: gray;
+        display: none;
+        margin-left: 80px;
+        z-index: 7677;
+        .index-list-nav{
+            position: absolute;
+            left: 0;
+            top: 1px;
+            height: 480px;
+            width: 190px;
+            z-index: 7670;
+            background: #252221;
+            li{
+                position: relative;
+                width: 190px;
+                height: 32px;
+                padding: 0 8px 0 10px;
+                a{
+                    float: left;
+                    margin-top: 9px;
+                    margin-right: 10px;
+                    padding-right: 2px;
+                    vertical-align:middle;
+                    color:#ddd;
+                    font-size: 13px;
+                    // background: red;
+                    border-right: 1px solid #d8d8d8;
+                    
+                }
+            }
+            li:hover a{
+                color: #252221;
+            }
+            li a:hover{
+                color: #f60;
+            }
+            .current{
+                background: white;
+            }
+        }
+        .listbox{
+            .index-list-box{
+                width: 999px;
+                top: 0;
+                position: absolute;
+                left: 190px;
+                min-height: 480px;
+                overflow: hidden;
+                background: white;
+                z-index: 7676;
+                display: none;
+                .sort-btn{
+                    width: 686px;
+                    float: left;
+                    height: 24px;
+                    margin: 10px 0 0 8px;
+                    overflow: hidden;
+                    a{
+                        float: left;
+                        height: 24px;
+                        margin-left: 25px;
+                        padding: 0 10px;
+                        color:#FFF;
+                        line-height: 24px;
+                        text-align: center;
+                        background:#F90;
+                        text-decoration: none;
+                        font-family: "Microsoft Yahei",tahoma,arial,"Hiragino Sans GB";
+                    }
+                }
+                .cate-list{
+                    width: 780px;
+                    margin: 6px 0 0 0;
+                    padding-left: 20px;
+                    overflow: hidden;
+                    float: left;
+                    // background: yellow;
+                    dl{
+                        width: 750px;
+                        float: left;
+                        height: auto;
+                        overflow: hidden;
+                        // background: skyblue;
+                        margin-bottom: 0;
+                        dt{
+                            float: left;
+                            width: 84px;
+                            height: 20px;
+                            font-weight: 700;
+                            padding-left: 10px;
+                            padding-top: 2px;
+                        }
+                        dd{
+                            width: 650px;
+                            float: left;
+                            font: 12px/1.5 arial,tahoma,宋体;
+                            line-height: 20px;
+                            overflow: hidden;
+                            border-bottom: 1px solid#eee;
+                            margin-top: 8px;
+                            padding-bottom: 8px;
+                            a{
+                                margin-right: 15px;
+                                float: left;
+                                &:first-child{
+                                    color:  #f60;
+                                }
+                            }
+                            
+                        }
+                    }
+                    }
+                }
+                .imgbox{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 199px;
+                    height: 100%;
+                    overflow: hidden;
+                    background:#f3f3f3;
+                    .imglist{
+                        width: 182px;
+                        margin: 10px 0 0 8px;
+                        // background: slateblue;
+                        a{
+                            float: left;
+                            width: 90px;
+                            height: 38px;
+                            margin: 0 1px 1px 0;
+                            padding-top: 7px;
+                            background:#FFF;
+                            img{
+                                width: 80px;
+                                height: 30px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+        }
+        }
+        .ng-index{
+            position: absolute;
+            left: 50%;
+            padding-left: 10px;
+            margin-left: -405px;
+            height: 38px;
+            line-height: 38px;
+            overflow: hidden;
+            z-index: 7669;
+
+            .ng-nav{
+                li{
+                    position: relative;
+                    height: 38px;
+                    font-weight: bold;
+                    float: left;
+                    padding: 0 12px 0 13px;
+                    a{
+                      color: rgb(51, 51, 51);
+                    }
+                    span{
+                        position: absolute;
+                        width: 25px;
+                        height: 8px;
+                        bottom: -8px;
+                        left: 50%;
+                        margin-left: -12px;
+                        background: url('../images/index/index.png') -37px 0;
+                        transition: all .5s;
+                    }
+                    }
+                    li:hover span{
+                        bottom: 0;
+                    }
+                    li:hover a{
+                        color: #F90;
+                    }
+                }
+            }
+            .header-search{
+                position: absolute;
+                height: 100px;
+                width: 600px;
+                top: -19px;
+                left: 386px;
+                .col-lg-6{
+                    margin-top: 20px;
+                    .input-group{
+                        border: 2px solid #F90;
+                        width: 540px;
+                        background: white;
+                        .form-control{
+                            outline: none;
+                            border: none;
+                        }
+                        .input-group-btn{
+                            color: white;
+                            .btn-default{
+                                width: 120px;
+                                background: #F90;
+                                color: white;
+                                font-size: 17px;
+                                font-weight: 600;
+                            }
+                        }
+                        
+                    }
+                    }
+            }
+}
+
+
+.nav-box{
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid#eee;
+    background:#f5f5f5;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-pills{
+        li{
+           a{
+            width: 65px;
+            padding: 0;
+            margin-left: 10px;
+            color: $acolor;
+           }
+           ul{
+               display: none;
+               top:27px;
+               z-index: 7691;
+               border: 1px solid #eee;
+           }
+           .son-nav{
+               width: 960px;
+               position: absolute;
+            //    display: none;
+               background: rgb(255, 255, 255);
+               li{
+                   width: 170px;
+                   float: left;
+                   border-right: 1px solid #cccccc;
+                   margin-top: 10px;
+                   overflow: hidden;
+                   &:last-child{
+                       border: none;
+                   }
+                dd{
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+                .list-box{
+                    width: 100%;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    
+                }
+                
+               }
+               
+               
+           }
+           .son-nav1{
+            width: 162px;
+            height: 100px;
+            background: white;
+            position: absolute;
+           }
+           .son-nav2{
+               @extend .son-nav1;
+           }
+           .son-nav-close{
+            .list{
+                float: left;
+                margin: 3px;
+                margin-left: 0px;
+            }
+           }
+        }
+        .active{
+            a{
+                color: $acolor;
+                background-color: white;
+            }
+        }
+        .active:hover a{
+            color: orangered;
+        }
+        li:hover a{
+            color: orangered;
+        }
+        li:hover .son-nav a{
+            color: $acolor;
+        }
+        li:hover .son-nav1 a{
+            color: $acolor;
+        }
+        li .son-nav1 a:hover{
+            color: red;
+        }
+        li .son-nav a:hover{
+            color: red;
+        }
+    }
+}

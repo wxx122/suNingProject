@@ -1,0 +1,99 @@
+.g-bg{
+    background: #fff;
+    .g-header {
+        width: 100%;
+        min-width: 990px;
+        height: 90px;
+        border-bottom: 1px solid 
+        #DDD;
+    .wraap{
+        width: 1190px;
+        margin: 0 auto;
+        .g-search {
+            height: 56px;
+            margin-right: 0;
+            margin-top: 26px;
+            width: 543px;
+            position: relative;
+            float: right;
+            margin: 30px 0 0 0;
+            z-index: 14 !important;
+            .searchbox{
+                .search-keyword {
+                    width: 354px;
+                    padding: 16px 10px;
+                    border: 2px solid #ffbc35;
+                    height: 18px;
+                    line-height: 18px;
+                    margin-top: 0;
+                    background:#FFF;
+                    color:#BBB;
+                    font-size: 12px;
+                    font-family: 'MicroSoft YaHei';
+                    float: left;
+                    outline: none;
+                    
+                }
+                .search-btn {
+                    font-weight: 700;
+                    width: 79px;
+                    height: 36px;
+                    line-height: 36px;
+                    background: #ffbc35;
+                    text-align: center;
+                    font-size: 16px;
+                    color:#fff;
+                    font-family: 'Microsoft YaHei';
+                    border: 0;
+                    cursor: pointer;
+                    float: left;
+                    margin-left: -5px;
+                }
+                .searchstore-btn {
+                    background: #444;
+                    float: left;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .g-logo{
+            width: 190px;
+            height: 60px;
+            float: left;
+            overflow: hidden;
+            margin: 15px 20px 0 0;
+            padding-right: 20px;
+            a{
+                width: 190px;
+                height: 60px;
+                overflow: hidden;
+                margin-right: 20px;
+                img{
+                    margin-top: -20px;
+                    
+                }
+            }
+        }
+    }
+    }
+}
+.shopinfo{
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+    width: 1190px;
+    margin: 0 auto;
+    .box{
+        position: relative;
+        min-height: 520px;
+        background:#fffefe;
+        .img-left{
+            position: absolute;
+            top: 30px;
+            left: 0px;
+            width: 401px;
+            height: 520px;
+            z-index: 5;
+        }
+    }
+}
