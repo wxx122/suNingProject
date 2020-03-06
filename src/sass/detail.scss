@@ -95,5 +95,261 @@
             height: 520px;
             z-index: 5;
         }
+        .proinfo{
+            height: 692px;
+            position: relative;
+            margin-left: 400px;
+            padding: 0 0 8px 20px;
+            padding-right: 210px;
+            padding-left: 10px;
+            .proinfo-title{
+                padding: 13px 10px 12px;
+                background:#fff;
+                h1{
+                    font: 700 16px/1.5 微软雅黑;
+                    color:#222;
+                    word-break: break-all;
+                    min-height: 24px;
+                }
+                h2{
+                    font: normal 14px/18px 微软雅黑;
+                    color:#f60;
+                    margin-top: 3px;
+                    word-break: break-all;
+                    a{
+                        text-decoration: underline;
+                        color: #6a9fde;
+                    }
+                }
+            }
+            .pricedemo{
+                width: 520px;
+                height: 300px;
+                background: #f5f5f5;
+                .pricemain{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    dl{
+                        margin-bottom: 4px;
+                        dt {
+                            float: left;
+                            width: 70px;
+                            padding-left: 10px;
+                            color: 
+                            #999;
+                            overflow: hidden;
+                            font-family: simsun;
+                            span {
+                                display: inline-block;
+                                width: 6em;
+                                font-family:simsun;
+                            }
+                        }
+                        dd{
+                            margin-left: 80px;
+                            .small-price {
+                                float: left;
+                                font-family:Tahoma;
+                                font-size: 14px;
+                                color: #999;
+                                i{
+                                    font-family:Arial;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                    .price-premo{
+                        margin-bottom: 2px;
+                        dt{
+                            margin-top: 8px;
+                        }
+                        dd{
+                            width: 380px;
+                            height: 30px;
+                            .mainprice {
+                                height: 28px;
+                                float: left;
+                                font: 700 30px/25px Tahoma;
+                                color: #e00;
+                                i {
+                                    font-size: 18px;
+                                    font-family: Arial;
+                                }
+                                span {
+                                    font-size: 24px;
+                                    font-family: Tahoma;
+                                }
+                            }
+                            .pri-label {
+                                position: relative;
+                                float: left;
+                                background: #f50;
+                                color:#fff;
+                                padding: 0 4px;
+                                margin-top: 8px;
+                                margin-left: 10px;
+                                .sub-icon {
+                                    position: absolute;
+                                    width: 5px;
+                                    height: 5px;
+                                    bottom: 0;
+                                    left: -5px;
+                                    background: url('../images/public/f-icons-ex1.png') -1056px -266px;
+                                    font-style: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+                .quan{
+                    margin-top: 30px;
+                    width: 520px;
+                    height: 118px;
+                    // background: palegreen;
+                    .youhui{
+                        width: 100%;
+                        height: 14px;
+                        span{
+                            color: #999;
+                        }
+                    }
+                    .youhuiquan{
+                        margin: 20px 0 0 30px;
+                        width: 490px;
+                        height: 46px;
+                        // background: palevioletred;
+                        .quan1{
+                            position: relative;
+                            color:#fff;
+                            line-height: 18px;
+                            display: inline-block;
+                            margin-right: 10px;
+                            text-decoration: none;
+                            .quan-border{
+                                position: absolute;
+                                top: 1px;
+                                height: 16px;
+                                width: 2px;
+                            }
+                            .bl{
+                                left: 0;
+                                background: url('../images/public/f-icons-ex1.png') -1060px -221px;
+                            }
+                            span{
+                                border-top: 1px solid#f60;
+                                border-bottom: 1px solid#f60;
+                                line-height: 16px;
+                                padding: 0 2px 0 4px;
+                                background-color:#f60;
+                                margin-left: -3px;
+                                display: inline-block;
+                            }
+                            .bm {
+                                width: 5px;
+                                display: inline-block;
+                                height: 18px;
+                                vertical-align: top;
+                                background: url('../images/public/f-icons-ex1.png') -1056px -158px;
+                            }
+                            .p-quan-white {
+                                padding: 0 4px 0 2px;
+                                background: #fff;
+                                color:#f60;
+                            }
+                            .quan-border {
+                                position: absolute;
+                                top: 1px;
+                                height: 16px;
+                                width: 2px;
+                                background: url('../images/public/f-icons-ex1.png') -1058px -221px;
+                        }
+                    
+                    }
+                }
+            }
+            
+        }
+        .btnbox{
+            width: 520px;
+            height: 200px;
+            margin: 20px 0;
+            .numbtn{
+                width: 100%;
+                height: 40px;
+                span{
+                    float: left;
+                }
+                a{
+                    width: 22px;
+                    float: left;
+                    height: 30px;
+                    text-decoration: none;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    background: url('../images/public/f-icons-ex1.png');
+                }
+                .jian{
+                    background-position: -1026px -744px;
+                }
+                input {
+                    float: left;
+                    width: 25px;
+                    height: 30px;
+                    padding: 5px;
+                    border: 1px solid 
+                    #ddd;
+                    margin: 0 5px;
+                    text-align: center;
+                }
+                .jia{
+                    background-position: -891px -656px;
+                }
+            }
+            .buybox{
+                width: 300;
+                height: 100px;
+                margin-top: 30px;
+                margin-left: 100px;
+                .buybtn{
+                    background:#663200;
+                    color:#fff;
+                    font: 16px/40px microsoft yahei;
+                    font-weight: normal;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    width: 115px;
+                    height: 40px;
+                    text-align: center;
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                .carbtn{
+                    background:#f50;
+                    color: #fff;
+                    font: 16px/40px microsoft yahei;
+                    font-weight: normal;
+                    font-weight: 600;
+                    border-radius: 3px;
+                    width: 135px;
+                    height: 40px;
+                    cursor: pointer;
+                    display: inline-block;
+                    i {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background: url('../images/public/f-icons-ex1.png');
+                        background-position: -830px -924px;
+                        vertical-align: middle;
+                        margin-right: 3px;
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
     }
+    
+}
 }

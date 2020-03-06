@@ -1,0 +1,1 @@
+"use strict";$.extend({cookie:function(e,o){if(!o){var t=document.cookie.match(RegExp("(^|s*)"+e+"=([^;]*)(;|$)"));return t?decodeURIComponent(t[2]):null}document.cookie=e+"="+escape(o)},removeCookie:function(e){var o=new Date;o.setTime(o.getTime()-1),document.cookie=e+"=;expires="+o.toGMTString()}}),$.cookie("userName")&&$(".login").text($.cookie("userName"));

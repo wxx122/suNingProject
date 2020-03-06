@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href='../css/detail.css'>
+    <link rel="stylesheet" href='../css/car.css'>
+    <link rel="stylesheet" href="../lib/carcss/carts.css">
+    <link rel="stylesheet" href="../lib/carcss/reset.css">
    <link rel="stylesheet" href='../css/public.css'>
    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="../lib/pagination/pagination.css">
@@ -12,7 +14,6 @@
    <link rel="stylesheet" href="../lib/jquery.exzoom.css">
    <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script src="../lib/swiper/js/swiper.min.js"></script>
-    <script src="../lib/pagination/pagination.js"></script>
     <script src="../lib/jquery.exzoom.js"></script>
 </head>
 <body>
@@ -43,7 +44,7 @@
           </ul>
           <!-- 第二个导航栏 -->
           <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#" class='login'>请登录
+            <li role="presentation" class="active"><a href="#" class="login" class='login'>请登录
             </a></li>
             <li role="presentation"><a href="#">注册有礼
             </a></li>
@@ -55,7 +56,7 @@
             </a></li>
             <li role="presentation"><a href="#">苏宁会员
             </a></li>
-            <li role="presentation"><a href="#" class="gocar">购物车
+            <li role="presentation"><a href="#">购物车
                 <span class="caret"></span>
             </a></li>
             <li role="presentation"><a href="#">易付宝
@@ -67,122 +68,73 @@
             </a></li>
           </ul>
     </nav>
-    <div class="g-bg">
-    <div class="g-header">
-        <div class="wraap">
-            <div class="g-search">
-                <form action="">
-                    <div class="searchbox">
-                        <input class="search-keyword search-keyword-yg" placeholder="搜好货">
-                        <input  type="button" class="search-btn" value="搜易购" >
-                        <input  type="button" class="search-btn searchstore-btn" value="搜本店">
-                    </div>
-                </form>
-            </div>
-            <div class="g-logo">
-                <a href="#">
-                    <img src="https://res.suning.cn/public/v3/images/logo/snlogo.png?v=2015042703" alt="">
-                </a>
-                
-            </div>
-        </div>
+    <div class="addbox">
+    <div class="cartMain_hd">
+        <ul class="order_lists cartTop">
+            <li class="list_chk">
+                <!--所有商品全选-->
+                <input type="checkbox" id="all" class="whole_check">
+                全选
+            </li>
+            <li class="list_con">商品信息</li>
+            <li class="list_info">商品参数</li>
+            <li class="list_price">单价</li>
+            <li class="list_amount">数量</li>
+            <li class="list_sum">金额</li>
+            <li class="list_op">操作</li>
+        </ul>
     </div>
-</div>
-<div class="shopinfo">
-    <divc class="box">
-        <div class="exzoom img-left " id="exzoom">
-            <!--大图区域-->
-            <div class="exzoom_img_box">
-                <ul class='exzoom_img_ul'>
-                    <li class="big1">
-                        <a href="#">
-                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
-                        </a>
+        <div class="cartBox">
+            <div class="shop_info">
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" class="son_check">
                     </li>
-                    <li class="big2">
-                        <a href="#">
-                            <img src="https://imgservice.suning.cn/uimg1/b2c/image/Sl3Y_pLMuOR00M11sXccCw.jpg_800w_800h_4e" alt="">
-                        </a>
+                    <li class="list_con">
+                        <div class="list_img"><a href="javascript:;"><img src="https://imgservice.suning.cn/uimg1/b2c/image/8ISqR9nT3GuZCgxapnYWiA.png_100w_100h_4e" alt=""></a></div>
+                        <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
                     </li>
-                    <li class="big3">
-                        <a href="#">
-                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
-                        </a>
+                    <li class="list_info">
+                        <p>规格：默认</p>
+                        <p>尺寸：16*16*3(cm)</p>
                     </li>
-                    <li class="big4">
-                        <a href="#">
-                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
-                        </a>
+                    <li class="list_price">
+                        <p class="price">￥980</p>
                     </li>
-                    <li class="big5">
-                        <a href="#">
-                            <img src="https://image.suning.cn/uimg/b2c/newcatentries/0070069181-000000000106031981_3.jpg_800w_800h_4e" alt="">
-                        </a>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥980</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
                     </li>
                 </ul>
             </div>
-            <!--缩略图导航-->
-            <div class="exzoom_nav"></div>
-            <!--控制按钮-->
-            <p class="exzoom_btn">
-                <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a>
-                <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a>
-            </p>
         </div>
-        <div class="proinfo">
-            <div class="proinfo-title">
-                <h1 >【买1送1】八马茶业 安溪原产清香型铁观音茶叶 地理标志产品 乌龙茶盒装252g</h1>
-                <h2>【买好茶 到八马】&nbsp;&nbsp;<a target="_blank" href="https://shop.suning.com/70069181/10378372.html" class="btn-prom-point">【2020春茶预售品尝第一抹鲜绿..点击进入专区】</a></h2>
-            </div>
-            <div class="pricedemo">
-                <div class="pricemain">
-                  <dl>
-                    <dt><span class="w3">参考价</span></dt>
-                    <dd>
-                        <del class="small-price"><i>¥</i> 176.00</del>
-                      </dd>
-                  </dl>  
-                  <dl class="price-premo">
-                    <dt><span class="w3" id="promPriceText">活动价</span></dt>
-                    <dd>
-                        <span class="mainprice"><i>¥</i>99.<span>00</span></span>
-                        <span class="pri-label"><i class="sub-icon"></i>正在促销</span>
-                    </dd>
-                  </dl>
-                </div>
-                <div class="quan">
-                    <div class="youhui">
-                        <span>优惠</span>
-                        <span>可参加优惠活动</span>
-                    </div>
-                    <div class="youhuiquan">
-                        <a href="#" class="quan1">
-                            <i class="quan-border bl"></i>
-                            <span>¥20</span>
-                            <i class="bm"></i>
-                            <span class="p-quan-white">满199用20</span>
-                            <i class="quan-border br"></i>
-                        </a>
-                        <span> 共一张优惠劵</span>
-                    </div>
-                </div>
-            </div>
-            <div class="btnbox">
-                <div class="numbtn">
-                    <span>数量</span>
-                    <a href="javascript:void(0);" class="jian"></a>
-                    <input id="buyNum" type="text" value="1" max="99">
-                    <a href="javascript:void(0);" class="jia"></a>
-                </div>
-                <div class="buybox">
-                    <span class="buybtn">立即购买</span>
-                    <span class="carbtn">
-                        <i></i>
-                        加入购物车</span>
+            <!--底部-->
+        <div class="bar-wrapper">
+            <div class="bar-right">
+                <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                <div class="calBtn"><a href="javascript:;">结算</a>
                 </div>
             </div>
         </div>
     </div>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+    </section>
     <!-- 底部 -->
     <div class="ng-foot">
         <p class="end">
@@ -296,6 +248,7 @@
         </div>
     </div>
 </body>
-<script src="../js/detail.js"></script>
+<script src="../js/car.js"></script>
+<script src="../lib/carjs/carts.js"></script>
 <script src="../js/cookie.js"></script>
 </html>

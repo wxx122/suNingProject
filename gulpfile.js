@@ -63,6 +63,15 @@ const serverHandler=()=>{
         port:8080,
         open:'./pages/index.html',
         livereload:true,
+        proxies: [
+            // 每一个代理配置就是一个对象
+            {
+              source: '/login', // 源, 你的代理标识符
+              // 你直接请求下面这个地址压根也拿不到东西, 因为跨域了
+              target: 'http://127.0.0.1:80/suningphp/login1.php' // 目标, 你要代理的地址http://127.0.0.1:80/suningphp/login1.php
+
+            }
+          ]
 
     }))
 }

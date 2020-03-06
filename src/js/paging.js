@@ -8,7 +8,7 @@ function getshop(){
         dataType: 'json',
         success: function (res) {
             $('.pagi').pagination({
-                pageCount: Math.ceil(res.length / 8), // 总页数
+                pageCount: Math.ceil(res.length / 16), // 总页数
                 current: 1, // 当前页
                 jump: true,
                 coping: true,
@@ -24,13 +24,13 @@ function getshop(){
                   // console.log(curr)
                   // 根据是第几页, 从我的总数组里面筛选出一部分数据
                   //   slice 方法包前不包后
-                  var list = res.slice((curr - 1) * 8, curr * 8)
+                  var list = res.slice((curr - 1) * 16, curr * 16)
                   bindHtml(list)
                 }
               })
     
               // 3. 先把第一页的数据渲染一次
-              bindHtml(res.slice(0, 8))
+              bindHtml(res.slice(0, 16))
     
               // 2-2. 给全局变量赋值
               list2 = res
