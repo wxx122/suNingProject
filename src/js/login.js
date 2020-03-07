@@ -20,7 +20,7 @@ $('.btngo').click(function(){
         }
       },
       error:function(result){ //失败的函数
-       console.log("请求出错")
+       alert('密码错误')
     }
     })
 })
